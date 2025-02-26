@@ -1,11 +1,11 @@
 # TODO - Your title
 
-This is the working area for the individual Internet-Draft, "TODO - Your title".
+This is the working area for the individual Internet-Draft, "QUIC Multimedia Performance".
 
-* [Editor's Copy](https://huitema.github.io/draft-huitema-quic-qperfm/#go.draft-todo-yourname-protocol.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-todo-yourname-protocol)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-todo-yourname-protocol)
-* [Compare Editor's Copy to Individual Draft](https://huitema.github.io/draft-huitema-quic-qperfm/#go.draft-todo-yourname-protocol.diff)
+* [Editor's Copy](https://huitema.github.io/draft-huitema-quic-qperfm/#go.draft-huitema-quic-qperfm.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-huitema-quic-qperfm)
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-huitema-quic-qperfm)
+* [Compare Editor's Copy to Individual Draft](https://huitema.github.io/draft-huitema-quic-qperfm/#go.draft-huitema-quic-qperfm.diff)
 
 
 ## Contributing
