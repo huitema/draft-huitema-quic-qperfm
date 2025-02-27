@@ -1,0 +1,83 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2025-02-27T00:22:07.232252+00:00",
+  "repo": "huitema/draft-huitema-quic-qperfm",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDON_i-ds6Mi6Wg",
+      "title": "Initial version of QPERFM draft.",
+      "url": "https://github.com/huitema/draft-huitema-quic-qperfm/pull/1",
+      "state": "MERGED",
+      "author": "huitema",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Quick mixup of the QUIC Perf draft and of the Picoquic documentation.",
+      "createdAt": "2025-02-25T23:53:11Z",
+      "updatedAt": "2025-02-26T00:22:16Z",
+      "baseRepository": "huitema/draft-huitema-quic-qperfm",
+      "baseRefName": "main",
+      "baseRefOid": "eb48dd214bc357d2486bf9fec19789eb5441040b",
+      "headRepository": "huitema/draft-huitema-quic-qperfm",
+      "headRefName": "initial-version",
+      "headRefOid": "6baacbd30f86107a873eea4c65c2b88be91d819d",
+      "closedAt": "2025-02-26T00:22:16Z",
+      "mergedAt": "2025-02-26T00:22:16Z",
+      "mergedBy": "huitema",
+      "mergeCommit": {
+        "oid": "1776b0e609e07ce0d5ccc8cb555fe8fbeefc62cc"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
