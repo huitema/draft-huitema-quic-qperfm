@@ -23,7 +23,7 @@ title: "QUIC Multimedia Performance"
 abbrev: "QUIC-Perf-Multimedia"
 category: info
 
-docname: draft-huitema-quic-qperfm-latest
+docname: draft-huitema-moq-qperfm-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -32,22 +32,23 @@ v: 3
 area: AREA
 workgroup: WG Working Group
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - MoQ performance
+ - MoQ simulation
 venue:
   group: WG
   type: Working Group
-  mail: WG@example.com
-  arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
 
 author:
  -
     fullname: Christian Huitema
     organization: Private Octopus Inc
     email: huitema@huitema.net
+ -
+   ins: S. Nandakumar
+   name: Suhas Nandakumar
+   organization: Cisco
+   email: snandaku@cisco.com
+
 
 normative:
 
@@ -189,11 +190,9 @@ One possible mitigation for unauthenticated clients generating an
 unacceptable amount of work on the server would be to use client
 certificates to authenticate the client first.
 
-
 # IANA Considerations
 
 This document has no IANA actions.
-
 
 --- back
 
