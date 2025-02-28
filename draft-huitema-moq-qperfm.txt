@@ -4,12 +4,13 @@
 
 WG Working Group                                              C. Huitema
 Internet-Draft                                       Private Octopus Inc
-Intended status: Informational                          28 February 2025
-Expires: 1 September 2025
+Intended status: Informational                             S. Nandakumar
+Expires: 1 September 2025                                          Cisco
+                                                        28 February 2025
 
 
                       QUIC Multimedia Performance
-                    draft-huitema-quic-qperfm-latest
+                    draft-huitema-moq-qperfm-latest
 
 Abstract
 
@@ -24,17 +25,8 @@ About This Document
 
    This note is to be removed before publishing as an RFC.
 
-   The latest revision of this draft can be found at
-   https://example.com/LATEST.  Status information for this document may
-   be found at https://datatracker.ietf.org/doc/draft-huitema-quic-
-   qperfm/.
-
-   Discussion of this document takes place on the WG Working Group
-   mailing list (mailto:WG@example.com), which is archived at
-   https://example.com/WG.
-
-   Source for this draft and an issue tracker can be found at
-   https://github.com/USER/REPO.
+   Status information for this document may be found at
+   https://datatracker.ietf.org/doc/draft-huitema-moq-qperfm/.
 
 Status of This Memo
 
@@ -79,7 +71,7 @@ Table of Contents
      6.1.  Normative References
      6.2.  Informative References
    Acknowledgments
-   Author's Address
+   Authors' Addresses
 
 1.  Introduction
 
@@ -236,8 +228,13 @@ Acknowledgments
    This draft extends Nick Banks original specification of QUIC Perf,
    and incorporates some of the text in that original draft.
 
-Author's Address
+Authors' Addresses
 
    Christian Huitema
    Private Octopus Inc
    Email: huitema@huitema.net
+
+
+   Suhas Nandakumar
+   Cisco
+   Email: snandaku@cisco.com

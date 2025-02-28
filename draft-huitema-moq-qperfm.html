@@ -6,6 +6,7 @@
 <meta content="initial-scale=1.0" name="viewport">
 <title>QUIC Multimedia Performance</title>
 <meta content="Christian Huitema" name="author">
+<meta content="Suhas Nandakumar" name="author">
 <meta content="
        The QUIC multimedia performance protocol (QPERFM) updates the QUIC performance
 protocol (QPERF). QPERF provides a simple, general-purpose
@@ -15,10 +16,9 @@ of multimedia application and measure performance in a multi-media
 oriented way. 
     " name="description">
 <meta content="xml2rfc 3.27.0" name="generator">
-<meta content="next generation" name="keyword">
-<meta content="unicorn" name="keyword">
-<meta content="sparkling distributed ledger" name="keyword">
-<meta content="draft-huitema-quic-qperfm-latest" name="ietf.draft">
+<meta content="MoQ performance" name="keyword">
+<meta content="MoQ simulation" name="keyword">
+<meta content="draft-huitema-moq-qperfm-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.27.0
     Python 3.12.9
@@ -34,7 +34,7 @@ oriented way.
     setuptools 70.3.0
     wcwidth 0.2.13
 -->
-<link href="draft-huitema-quic-qperfm.xml" rel="alternate" type="application/rfc+xml">
+<link href="draft-huitema-moq-qperfm.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
 <style type="text/css">@font-face {
   font-family: 'Lora';
@@ -1054,7 +1054,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <td class="right">February 2025</td>
 </tr></thead>
 <tfoot><tr>
-<td class="left">Huitema</td>
+<td class="left">Huitema &amp; Nandakumar</td>
 <td class="center">Expires 1 September 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
@@ -1065,7 +1065,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dt class="label-workgroup">Workgroup:</dt>
 <dd class="workgroup">WG Working Group</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-huitema-quic-qperfm-latest</dd>
+<dd class="internet-draft">draft-huitema-moq-qperfm-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
 <time datetime="2025-02-28" class="published">28 February 2025</time>
@@ -1074,11 +1074,15 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
 <dd class="expires"><time datetime="2025-09-01">1 September 2025</time></dd>
-<dt class="label-authors">Author:</dt>
+<dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
       <div class="author-name">C. Huitema</div>
 <div class="org">Private Octopus Inc</div>
+</div>
+<div class="author">
+      <div class="author-name">S. Nandakumar</div>
+<div class="org">Cisco</div>
 </div>
 </dd>
 </dl>
@@ -1099,14 +1103,7 @@ oriented way.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
       </h2>
 <p id="section-note.1-1">This note is to be removed before publishing as an RFC.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
 <p id="section-note.1-2">
-        The latest revision of this draft can be found at <span><a href="https://example.com/LATEST">https://example.com/LATEST</a></span>.
-        Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-huitema-quic-qperfm/">https://datatracker.ietf.org/doc/draft-huitema-quic-qperfm/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
-<p id="section-note.1-3">
-        Discussion of this document takes place on the
-        WG Working Group mailing list (<span><a href="mailto:WG@example.com">mailto:WG@example.com</a></span>),
-        which is archived at <span><a href="https://example.com/WG">https://example.com/WG</a></span>.<a href="#section-note.1-3" class="pilcrow">¶</a></p>
-<p id="section-note.1-4">Source for this draft and an issue tracker can be found at
-        <span><a href="https://github.com/USER/REPO">https://github.com/USER/REPO</a></span>.<a href="#section-note.1-4" class="pilcrow">¶</a></p>
+        Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-huitema-moq-qperfm/">https://datatracker.ietf.org/doc/draft-huitema-moq-qperfm/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
 </section>
 <div id="status-of-memo">
 <section id="section-boilerplate.1">
@@ -1191,7 +1188,7 @@ oriented way.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
             <p id="section-toc.1-1.7.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
+            <p id="section-toc.1-1.8.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1395,8 +1392,8 @@ and incorporates some of the text in that original draft.<a href="#appendix-A-1"
 </div>
 <div id="authors-addresses">
 <section id="appendix-B">
-      <h2 id="name-authors-address">
-<a href="#name-authors-address" class="section-name selfRef">Author's Address</a>
+      <h2 id="name-authors-addresses">
+<a href="#name-authors-addresses" class="section-name selfRef">Authors' Addresses</a>
       </h2>
 <address class="vcard">
         <div dir="auto" class="left"><span class="fn nameRole">Christian Huitema</span></div>
@@ -1404,6 +1401,14 @@ and incorporates some of the text in that original draft.<a href="#appendix-A-1"
 <div class="email">
 <span>Email:</span>
 <a href="mailto:huitema@huitema.net" class="email">huitema@huitema.net</a>
+</div>
+</address>
+<address class="vcard">
+        <div dir="auto" class="left"><span class="fn nameRole">Suhas Nandakumar</span></div>
+<div dir="auto" class="left"><span class="org">Cisco</span></div>
+<div class="email">
+<span>Email:</span>
+<a href="mailto:snandaku@cisco.com" class="email">snandaku@cisco.com</a>
 </div>
 </address>
 </section>
